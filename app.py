@@ -10,10 +10,10 @@ def check_password(password: str):
     return {**result}
     
 
-@app.get("/info/")
+@app.get("/info")
 def get_info(cmd: str):
 
     return {
-        "feed_password":"http://127.0.0.1:8000/password/?password=1234"
+        "feed_password":"https://check-admin-pass.onrender.com/password/?password=123"
     }
     
